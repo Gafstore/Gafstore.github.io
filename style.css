@@ -1,52 +1,72 @@
 * {
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #eddbc0;
-  justify-content: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background: url(img/image\ 1.png);
+  background-blend-mode: multiply;
 }
+
 nav {
   background-color: #e3e1de;
+  color: black;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-nav h1 {
+nav .container a {
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 600;
 }
+.container button a {
+  color: black;
+}
+.container button a:hover {
+  color: white;
+}
 
-.card1 {
-  background: linear-gradient(54.45deg, #e60909 14.27%, rgba(229, 9, 9, 0.39) 100%);
-  box-shadow: 3px 12px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+.swiper {
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 50%;
+}
+
+.swiper-slide img {
+  display: flex;
+  width: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide .card {
+  background-color: red;
+  box-shadow: 3px 12px 10px rgba(0, 0, 0, 0.25);
   height: 100%;
   padding: 20px;
-
-  cursor: pointer;
-}
-.beli button {
-  background-color: #d9d9d9;
-  border-style: none;
-  border-radius: 30px;
-  height: 36px;
-  width: 70%;
-}
-.beli button a {
-  text-decoration: none;
-  color: #e6201d;
-  font-style: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#akhir {
-  background-color: transparent;
-  padding: 20px;
-  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: white;
 }
 .dark-mode {
   background-color: #282a3a;
+  color: white;
+}
+.dark-mode .container button a {
+  color: white;
+}
+.dark-mode .container button {
+  color: white;
+}
+.dark-mode footer h6 {
   color: white;
 }
